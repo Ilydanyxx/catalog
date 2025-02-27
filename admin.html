@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адмін-панель</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="admin.js"></script>
+</head>
+<body>
+    <h1>Адмін-панель</h1>
+    
+    <form id="addCoinForm">
+        <input type="text" id="name" placeholder="Назва монети" required>
+        <input type="text" id="year" placeholder="Рік" required>
+        <input type="text" id="price" placeholder="Ціна">
+        <input type="text" id="imageLinks" placeholder="Посилання на фото (через кому)">
+        <input type="file" id="imageFiles" multiple>
+        <button type="submit">Додати монету</button>
+    </form>
+    
+    <div id="coinList"></div>
+    
+    <a href="index.html">Перейти в каталог</a>
+</body>
+</html>
